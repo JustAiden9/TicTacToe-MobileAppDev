@@ -53,7 +53,6 @@ struct ContentView: View {
                 }
             }))
         }
-                                                                       
         .onChange(of: moves) { oldvalue, newValue in
             checkForWinner()
             checkLine(a: 0, b: 1, c: 2)
@@ -86,7 +85,6 @@ struct ContentView: View {
         }
     }
 }
-
 
 #Preview {
     ContentView()
