@@ -56,7 +56,6 @@ struct ContentView: View {
         .onChange(of: moves) { oldvalue, newValue in
             checkForWinner()
         }
-
     }
     private func checkForWinner() {
         checkLine(a: 0, b: 1, c: 2)
@@ -68,7 +67,6 @@ struct ContentView: View {
         checkLine(a: 0, b: 4, c: 8)
         checkLine(a: 2, b: 4, c: 6)
     }
-    
     private func checkLine(a: Int, b: Int, c: Int) {
         if moves[a] != "" && moves[a] == moves[b] && moves[b] == moves[c] {
             winMessage = "\(moves[a]) is the winner!"
