@@ -17,6 +17,11 @@ struct ContentView: View {
             Text("Tic Tac Toe")
                 .font(.title)
                 .bold()
+            Button("Reset") {
+                moves = Array(repeating: "", count: 9)
+            }
+            .font(.title2)
+            .bold()
             LazyVGrid(columns: Array(repeating: GridItem(.fixed(120)), count: 3), content: {
                 ForEach(0..<9) { index in
                     ZStack {
