@@ -17,7 +17,7 @@ struct ContentView: View {
             Text("Tic Tac Toe")
                 .font(.title)
                 .bold()
-            Button("Reset") {
+            Button("Reset Game") {
                 moves = Array(repeating: "", count: 9)
             }
             .font(.title2)
